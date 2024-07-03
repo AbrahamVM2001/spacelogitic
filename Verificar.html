@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Renta de salones y oficinas en la ciudad de México">
+    <meta name="keywords" content="nubox, renta, salones, oficinas, renta de salones, renta de oficinas">
+    <meta name="Abraham" content="Abraham">
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="file/bootstrap/css/bootstrap.min.css">
+
+    <!--Favicon-->
+    <link rel="icon" href="file/imagenes/favicon.ico">
+    
+    <!--Titulo-->
+    <title>SPACE LOGITICS</title>
+
+    <!--Css propio-->
+    <link rel="stylesheet" href="file/css/style-vr.css">
+
+    <!-- Importacion de iconos-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Proloader -->
+
+    <div id="preloader-container">
+        <img src="file/imagenes/cohete.gif" alt="Loading...">
+    </div>
+
+    <!-- Encabezado -->
+
+    <section id="inicio">    
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="file/imagenes/logo.png" class="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">Verificación</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html"><img src="file/imagenes/icono-login.svg" class="login"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <!-- Buscar producto -->
+
+    <section id="buscar">
+        <div class="container my3">
+            <div class="row">
+                <div class="col-sm-12 col-md-4 col-xl-4" style="width: 100%;">
+                    <center><h1>BUSCAR EL ESTADO DE TU PRODUCTO</h1></center>
+                    <p>
+                        Para consultar el estado actualizado de tu producto, te solicitamos ingresar el 
+                        código de envío correspondiente. Este código es una clave única asignada a tu envío 
+                        que nos permite rastrear y proporcionarte información detallada sobre la ubicación y 
+                        el progreso de tu producto en tiempo real. Ingresa el código en el campo designado y 
+                        accede a datos precisos para mantenerte informado sobre el estado y la ubicación exacta 
+                        de tu envío. Este proceso garantiza una experiencia de seguimiento eficiente y personalizada 
+                        para que tengas la tranquilidad de conocer la situación de tu producto en cualquier momento</p>
+                </div>
+                <div class="col-sm-12 col-md-4 col-xl-4" style="width: 100%;">
+                    <form id="buscarForm">
+                        <div class="form-group">
+                            <label for="formGroupExampleInput">Matricula de envio</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ejem. 1" style="background-color: #001f3f3d;">
+                        </div>
+                        <center><button type="button" class="btn btn-form" onclick="buscarEnvio()">Buscar</button></center>
+                    </form> 
+                    <table id="tablaNaves" class="table table-striped table-bordered table-hover">
+                        <thead>
+                            <tr>
+                                <th>Id Planeta</th>
+                                <th>Clave Nave</th>
+                                <th>Nombre completo</th>
+                                <th>Numero celular</th>
+                                <th>Peso</th>
+                                <th>Planeta Envio</th>
+                                <th>Planeta Entrega</th>
+                                <th>Distancia</th>
+                                <th>Estado</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Aquí se llenarán las filas de la tabla con PHP -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- fooster -->
+
+    <footer class="bg-light text-center text-lg-start" style="padding-top: 10px;">
+        <div class="text-center p-3" style="background-color: #001F3F; color: #fff;">
+          © 2023 Copyright: Ing. Abraham Vera Martinez 
+        </div>
+    </footer>
+
+    <!--Librerias de js-->
+    <script src="file/js/proloader.js"></script>
+    <script src="file/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="file/bootstrap/js/bootstrap.min.js"></script>
+    <script src="file/bootstrap/js/popper.min.js"></script>
+    <script src="file/js/animation.js"></script>
+    <script src="file/js/verificacion.js"></script>
+</body>
+</html>

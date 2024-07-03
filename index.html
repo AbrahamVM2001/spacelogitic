@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Renta de salones y oficinas en la ciudad de México">
+    <meta name="keywords" content="nubox, renta, salones, oficinas, renta de salones, renta de oficinas">
+    <meta name="Abraham" content="Abraham">
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="file/bootstrap/css/bootstrap.min.css">
+
+    <!--Favicon-->
+    <link rel="icon" href="file/imagenes/favicon.ico">
+    
+    <!--Titulo-->
+    <title>SPACE LOGITICS</title>
+
+    <!--Css propio-->
+    <link rel="stylesheet" href="file/css/style.css">
+
+    <!-- Importacion de iconos-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Proloader -->
+
+    <div id="preloader-container">
+        <img src="file/imagenes/cohete.gif" alt="Loading...">
+    </div>
+
+    <!-- Encabezado -->
+
+    <section id="inicio">
+        <div id="video-container">
+            <video id="video-background" autoplay loop muted>
+                <source src="file/video/into.mp4" type="video/mp4">
+                Tu navegador no admite el elemento de video.
+            </video>
+        </div>
+    
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="file/imagenes/logo.png" class="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-light active" aria-current="page" href="#inicio">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#About">Quienes somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#Proceso">Proceso</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="Verificar.html">Buscar pendido</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="login.html">
+                                <img src="file/imagenes/icono-login.svg" class="login">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6" style="width: 100%; height: 100vh;">
+                    <p class="floating-text">BIENVENIDO A NUESTRO SISTEMA</p>
+                    <center><a href="#Proceso" target="_blank" class="contact-button">¿Como iniciar?</a></center>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About -->
+
+    <section id="About">
+        <div class="container my-3" style="padding-top: 90px;">
+            <div class="row">
+                <div class="col-sm-12 col-md-4 col-xl-4">
+                    <h2 class="title-about">¿QUIENES SOMOS?</h2>
+                    <p class="paragraph-about">
+                        En esta pantalla, se ha implementado una funcionalidad que 
+                        facilita considerablemente el proceso de envío de tus productos a 
+                        destinos interplanetarios. Con esta mejora, ahora puedes gestionar
+                        y coordinar la distribución de tus productos de manera eficiente 
+                        y directa a través del espacio, simplificando así el acceso a mercados 
+                        fuera de nuestro planeta. Esta nueva funcionalidad no solo agiliza el 
+                        proceso, sino que también brinda una experiencia más intuitiva y eficaz 
+                        para expandir tus operaciones comerciales a escala interplanetaria.
+                    </p>
+                </div>
+                <div class="col-sm-12 col-md-4 col-xl-4">
+                    <iframe src="https://app.vectary.com/p/4yaokkAmzbAxFrcIArqPFr" frameborder="0" width="100%" height="480"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proceso -->
+
+    <section id="Proceso">
+        <div class="container my3">
+            <div class="row">
+                <div class="col-sm-12 col-md-4 col-xl-4" style="width: 100%;">
+                    <center><h2>TAN SOLO TRES PASOS TU PAQUETE ESTERA LISTO</h2></center>
+                    <div class="animation-box">
+                        <div class="registro-paquete">
+                            <img src="file/imagenes/icono-caja.svg" class="ico-box">
+                            <p>Solo necesitas hacer el registro del producto</p>
+                        </div>
+                        <div class="verificacion-paquete">
+                            <img src="file/imagenes/icono-verificacion.svg" class="ico-true">
+                            <p>Cuando termines tu registro, solo falta verificar</p>
+                        </div>
+                        <div class="listo">
+                            <img src="file/imagenes/icono-cohete.svg" class="ico-cohete">
+                            <p>Listo tu paquete al planeta ha salido con éxito</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-xl-4" style="width: 100%;">
+                    <center><h3>INSTRUCCIONES</h3></center>
+                    <p>Antes de llenar este formulario llené el formulario correspondiente, al finalizar 
+                        el sistema le asignara la nave que se encargara de llevar su paquete al planeta.
+                    </p>
+                    <form action="file/php/RegistroEnvios.php" method="post" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <label for="formGroupExampleInput">Nombre Completo</label>
+                            <input type="text" class="form-control" name="NomCom" id="NomCom" placeholder="Ejem. Juan Carlos Vega Garcia" style="background-color: #001f3f3d;;">
+                        </div>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput">Número celular</label>
+                            <input type="number" class="form-control" name="celular" id="celular" placeholder="Ejem. 5629987600" style="background-color: #001f3f3d;;">
+                        </div>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput">Peso del paquete</label>
+                            <input type="number" class="form-control" name="Peso" id="Peso" placeholder="Ejem. 2; En este caso es en toneladas" style="background-color: #001f3f3d;;">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputState">Planeta Envío</label>
+                            <select id="inputState" name="inputState" class="form-control" style="background-color: #001f3f3d;" onchange="actualizarDistancia()">
+                                <option selected>.....</option>
+                                <option>Tierra</option>
+                                <option>Mercurio</option>
+                                <option>Jupiter</option>
+                                <option>Nepturno</option>
+                                <option>Venus</option>
+                                <option>Saturno</option>
+                                <option>Urano</option>
+                                <option>Marte</option>
+                            </select>
+                        </div>
+                    
+                        <div class="form-group">
+                            <label for="inputState">Planeta Destino</label>
+                            <select id="inputStates" name="inputStates" class="form-control" style="background-color: #001f3f3d;" onchange="actualizarDistancia()">                    
+                                <option selected>......</option>
+                                <option>Marte</option>
+                                <option>Mercurio</option>
+                                <option>Jupiter</option>
+                                <option>Nepturno</option>
+                                <option>Venus</option>
+                                <option>Saturno</option>
+                                <option>Urano</option>
+                                <option>Tierra</option>
+                            </select>
+                        </div>
+                    
+                        <div class="form-group">
+                            <label for="inputState">Distancia</label>
+                            <input type="text" class="form-control" id="Distancia" name="Distancia" style="background-color: #001f3f3d;" readonly>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputState">Fecha de envío</label>
+                            <input type="date" class="form-control" id="fechaE" name="fechaActual" style="background-color: #001f3f3d;" readonly>
+                        </div>                        
+                        <div class="form-group">
+                            <label for="inputState">Fecha de Entrega</label>
+                            <input type="date" class="form-control" id="fecha" name="fecha" style="background-color: #001f3f3d;">
+                        </div>
+                        <center><button type="submit" class="btn btn-form">Enviar</button></center>
+                    </form>                    
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Proceso de cohete -->
+
+    <section id="Registro-Cohete" style="padding-top: 10px;">
+        <div class="container my3">
+            <div class="row">
+                <div class="col-sm-12 col-md-4 col-xl-4" style="width: 100%;">
+                    <center><h2>Registro de cohetes</h2></center>
+                    <p>Para llevar a cabo, el alta de una nave espacial, necesitas llenar 
+                        este formulario para poder integrarlo a nuestra flotilla.</p>
+                </div>
+                <div class="col-sm-12 col-md-4 col-xl-4" style="width: 100%;">
+                    <form action="file/php/RegistroNaves.php" method="post" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <label for="formGroupExampleInput">Nombre del representante</label>
+                            <input type="text" class="form-control" name="Representante" placeholder="Ejem. Juan Carlos Vega Garcia" style="background-color: #001f3f3d;">
+                        </div>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput">Distancia</label>
+                            <input type="number" class="form-control" name="Distancia" placeholder="Ejem. 100000" style="background-color: #001f3f3d;">
+                        </div>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput">Combustible disponible</label>
+                            <input type="number" class="form-control" name="Combustible" placeholder="Ejem. 100000" style="background-color: #001f3f3d;">
+                        </div>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput">Cargar imagen</label>
+                            <input type="file" name="Imagen" id="ejemplo_archivo_1">
+                        </div>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput">Correo</label>
+                            <input type="text" class="form-control" name="Correo" placeholder="Ejemp. space@gmail.com" style="background-color: #001f3f3d;"> 
+                        </div>
+                        <div class="form-group">
+                            <p>Minimo de caracteres 8, incluya caracteres especiales, numericos y mayusculas</p>
+                            <label for="formGroupExampleInput">Contraseña</label>
+                            <input type="password" class="form-control" name="Pass" style="background-color: #001f3f3d;">
+                        </div>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput"> Confirmar Contraseña</label>
+                            <input type="password" class="form-control" name="PassC" style="background-color: #001f3f3d;">
+                        </div>
+                        <center><button type="submit" class="btn btn-form">Registrar</button></center>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- fooster -->
+
+    <footer class="bg-light text-center text-lg-start" style="padding-top: 10px;">
+        <div class="text-center p-3" style="background-color: #001F3F; color: #fff;">
+          © 2023 Copyright: Ing. Abraham Vera Martinez 
+        </div>
+    </footer>
+
+    <!--Librerias de js-->
+    <script src="file/js/proloader.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="file/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="file/bootstrap/js/bootstrap.min.js"></script>
+    <script src="file/bootstrap/js/popper.min.js"></script>
+    <script src="file/js/animation.js"></script>
+    <script src="file/js/mensaje.js"></script>
+    <script src="file/js/distancia.js"></script>
+    <script src="file/js/date.js"></script>
+    <script src="file/js/clave.js"></script>
+</body>
+</html>
