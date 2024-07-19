@@ -1,0 +1,24 @@
+:root{
+    /* colores negros */
+    --bg-black1: #080808;
+    --bg-black2: rgba(0, 0, 0, 0.1);
+    --bg-black3: rgba(0, 0, 0, 0.3);
+    --bg-black4: #3c4359;
+    --bg-black5: rgba(0, 0, 0, 0.2);
+    --bg-black6: rgba(255, 255, 255, 0.08);
+    --bg-black7: #1D262B;
+    /* colores blancos */
+    --bg-white1: #FCFDFD;
+    --bg-white2: rgb(255, 255, 255);
+    /* colores */
+    --bg-color1: #546c8c;
+    --bg-color2: #bacbd9;
+    --bg-color3: #7ea1bf;
+    /* tipografia */
+    --space-genko: "Space Grotesk", sans-serif;
+    /* negritas */
+    --bg-bold1: 100;
+    --bg-bold2: 300;
+    --bg-bold3: 600;
+    --bg-bold4: 900;
+}

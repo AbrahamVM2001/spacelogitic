@@ -1,3 +1,0 @@
-function imprimirPantalla() {
-    window.print();
-}
