@@ -1,6 +1,7 @@
 body {
     color: var(--bg-black1);
-    background-image: linear-gradient( 85.2deg,  rgba(33,3,40,1) 7.5%, rgba(65,5,72,1) 88.7% );
+    background: rgb(13, 13, 13);
+    background: linear-gradient(90deg, rgba(13, 13, 13, 1) 0%, rgba(26, 26, 64, 1) 100%);
 }
 
 h1,
@@ -260,7 +261,8 @@ nav {
     position: fixed;
     z-index: 99;
     width: 100%;
-    background: var(--bg-white4);
+    background: rgb(13, 13, 13);
+    background: linear-gradient(90deg, rgba(13, 13, 13, 1) 0%, rgba(26, 26, 64, 1) 100%);
 }
 
 nav .wrapper {
@@ -435,7 +437,7 @@ nav.scrolled {
     text-align: center;
 }
 
-#home h1{
+#home h1 {
     font-family: var(--space-genko);
     font-style: italic;
     font-weight: var(--bg-bold4);
@@ -579,14 +581,43 @@ nav.scrolled {
     animation: twinkling 2s infinite;
 }
 
+#home .form-control{
+    border-radius: 0;
+}
+
 /* about */
 
-#about{
+#about {
     background-color: var(--bg-white1);
 }
 
 /* help */
 
-#help{
+#help {
     background-color: var(--bg-white1);
+}
+
+.enlace{
+    border-radius: 50px;
+    padding: 10px;
+    text-decoration: none;
+    transform: scale(1);
+	animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
 }

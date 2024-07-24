@@ -79,6 +79,15 @@
                         espacial, que
                         ofrece servicios de envío por
                         todo el sistema solar.</p>
+                    <form action="">
+                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                            <input type="text" name="rastrear" id="rastrear" class="form-control"
+                                placeholder="Rastrear paquete">
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                            <button class="btn btn-dark mt-2" style="font-size: 22px;">Rastrear</button>
+                        </div>
+                    </form>
                 </div>
                 <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 d-flex align-items-center justify-content-center">
                     <div class="section-banner">
@@ -159,154 +168,217 @@
     </section>
 
     <!-- about -->
-    <section id="about" class="pt-5">
+    <section id="about">
         <div class="container">
             <div class="row">
-                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6">
-                    <img src="file/imagenes/image1.webp" alt="Fondo 1" width="90%">
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center mt-5 mb-5">
+                    <h2>Bienvenidos</h2>
                 </div>
-                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6">
-                    <h2>Quienes somos</h2>
-                    <!-- card 1 -->
-                    <div class="card mt-4">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-sm-12 col-md-12 col lg-12 col-xl-6" style="width: 15%;">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24">
-                                        <g fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"
-                                            stroke-width="1.5" color="#000000">
-                                            <path
-                                                d="M11.998 2C8.99 2 7.04 4.019 4.734 4.755c-.938.3-1.407.449-1.597.66c-.19.21-.245.519-.356 1.135c-1.19 6.596 1.41 12.694 7.61 15.068c.665.255.998.382 1.61.382s.946-.128 1.612-.383c6.199-2.373 8.796-8.471 7.606-15.067c-.111-.616-.167-.925-.357-1.136s-.658-.36-1.596-.659C16.959 4.019 15.006 2 11.998 2" />
-                                            <path d="M10 12.5s.5 0 1 1c0 0 1.588-2.5 3-3" />
-                                            <path d="M17 12a5 5 0 1 1-10 0a5 5 0 0 1 10 0" />
-                                        </g>
-                                    </svg>
-                                </div>
-                                <div class="col-sm-12 col-md-12 col lg-12 col-xl-6" style="width: 80%;">
-                                    <h5 class="card-title">Entrega Rápida y Segura</h5>
-                                    <p class="card-text">Garantizamos que tus paquetes lleguen a tiempo y en perfectas
-                                        condiciones.</p>
-                                </div>
+                <div class="row">
+                    <div class="col-sm-2">
+                        <div class="card align-items-center justify-content-center text-center"
+                            style="width: 100%; border: 0;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 32 32">
+                                <path fill="#000000" d="M14 16.59L11.41 14L10 15.41l4 4l8-8L20.59 10z" />
+                                <path fill="#000000"
+                                    d="m16 30l-6.176-3.293A10.98 10.98 0 0 1 4 17V4a2 2 0 0 1 2-2h20a2 2 0 0 1 2 2v13a10.98 10.98 0 0 1-5.824 9.707ZM6 4v13a8.99 8.99 0 0 0 4.766 7.942L16 27.733l5.234-2.79A8.99 8.99 0 0 0 26 17V4Z" />
+                            </svg>
+                            <div class="card-body">
+                                <h5 class="card-title">Entrega Rápida y Segura.</h5>
                             </div>
                         </div>
                     </div>
-                    <!-- card 2 -->
-                    <div class="card mt-4">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-sm-12 col-md-12 col lg-12 col-xl-6" style="width: 15%;">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="49.951219512195124"
-                                        viewBox="0 0 1025 1024">
-                                        <path fill="#000000"
-                                            d="M512.56 1024q-104 0-199-40.5t-163.5-109t-109-163.5T.56 512q0-114 50-219q-50-39-50-101q0-53 37.5-90.5t90.5-37.5q48 0 85 33q134-97 299-97q104 0 199 40.5t163.5 109t109 163.5t40.5 199t-40.5 199t-109 163.5t-163.5 109t-199 40.5m0-960q-145 0-263 86q7 22 7 42q0 53-37.5 90.5t-90.5 37.5q-7 0-19-2q-45 93-45 194q0 91 35.5 174t95.5 143t143 95.5t174 35.5t174-35.5t143-95.5t95.5-143t35.5-174t-35.5-174t-95.5-143t-143-95.5t-174-35.5m293 575q-37 87-116.5 140t-176.5 53q-87 0-160.5-43t-116.5-116.5t-43-160.5t43-160.5T352.06 235t160.5-43q116 0 204.5 74t109.5 186q31 9 50.5 34t19.5 58q0 38-26.5 65.5t-64.5 29.5m-293-383q-106 0-181 75t-75 181t75 181t181 75q76 0 138-40.5t93-106.5q-39-29-39-77q0-29 16-53t42-35q-20-87-89.5-143.5T512.56 256m0 384q-53 0-90.5-37.5t-37.5-90.5t37.5-90.5t90.5-37.5t90.5 37.5t37.5 90.5t-37.5 90.5t-90.5 37.5" />
-                                    </svg>
-                                </div>
-                                <div class="col-sm-12 col-md-12 col lg-12 col-xl-6" style="width: 80%;">
-                                    <h5 class="card-title">Cobertura Total del Sistema Solar.</h5>
-                                    <p class="card-text">Envía tus productos a cualquier destino, incluyendo planetas,
-                                        lunas y estaciones espaciales.</p>
-                                </div>
+                    <div class="col-sm-2">
+                        <div class="card align-items-center justify-content-center text-center"
+                            style="width: 100%; border: 0;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="49.951219512195124"
+                                viewBox="0 0 1025 1024">
+                                <path fill="#000000"
+                                    d="M512.56 1024q-104 0-199-40.5t-163.5-109t-109-163.5T.56 512q0-114 50-219q-50-39-50-101q0-53 37.5-90.5t90.5-37.5q48 0 85 33q134-97 299-97q104 0 199 40.5t163.5 109t109 163.5t40.5 199t-40.5 199t-109 163.5t-163.5 109t-199 40.5m0-960q-145 0-263 86q7 22 7 42q0 53-37.5 90.5t-90.5 37.5q-7 0-19-2q-45 93-45 194q0 91 35.5 174t95.5 143t143 95.5t174 35.5t174-35.5t143-95.5t95.5-143t35.5-174t-35.5-174t-95.5-143t-143-95.5t-174-35.5m293 575q-37 87-116.5 140t-176.5 53q-87 0-160.5-43t-116.5-116.5t-43-160.5t43-160.5T352.06 235t160.5-43q116 0 204.5 74t109.5 186q31 9 50.5 34t19.5 58q0 38-26.5 65.5t-64.5 29.5m-293-383q-106 0-181 75t-75 181t75 181t181 75q76 0 138-40.5t93-106.5q-39-29-39-77q0-29 16-53t42-35q-20-87-89.5-143.5T512.56 256m0 384q-53 0-90.5-37.5t-37.5-90.5t37.5-90.5t90.5-37.5t90.5 37.5t37.5 90.5t-37.5 90.5t-90.5 37.5" />
+                            </svg>
+                            <div class="card-body">
+                                <h5 class="card-title">Cobertura Total del Sistema Solar.</h5>
                             </div>
                         </div>
                     </div>
-                    <!-- card 3 -->
-                    <div class="card mt-4">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-sm-12 col-md-12 col lg-12 col-xl-6" style="width: 15%;">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24">
-                                        <path fill="#000000"
-                                            d="M12 18q2.5 0 4.25-1.75T18 12t-1.75-4.25T12 6v6l-4.25 4.25q.875.825 1.963 1.288T12 18m0 4q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8" />
-                                    </svg>
-                                </div>
-                                <div class="col-sm-12 col-md-12 col lg-12 col-xl-6" style="width: 80%;">
-                                    <h5 class="card-title">Seguimiento en Tiempo Real.</h5>
-                                    <p class="card-text">Monitorea el progreso de tu envío desde la Tierra hasta su
-                                        destino final en cualquier punto del sistema solar.</p>
-                                </div>
+                    <div class="col-sm-2">
+                        <div class="card align-items-center justify-content-center text-center"
+                            style="width: 100%; border: 0;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24">
+                                <g fill="none" stroke="#000000" stroke-width="1.5">
+                                    <path
+                                        d="M5 12c0-2.809 0-4.213.674-5.222a4 4 0 0 1 1.104-1.104C7.787 5 9.19 5 12 5c2.809 0 4.213 0 5.222.674a4 4 0 0 1 1.104 1.104C19 7.787 19 9.19 19 12c0 2.809 0 4.213-.674 5.222a4.003 4.003 0 0 1-1.104 1.104C16.213 19 14.81 19 12 19c-2.809 0-4.213 0-5.222-.674a4.002 4.002 0 0 1-1.104-1.104C5 16.213 5 14.81 5 12Z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.077L14 14" />
+                                    <path stroke-linecap="round" d="M7 2h10M7 22h10" />
+                                </g>
+                            </svg>
+                            <div class="card-body">
+                                <h5 class="card-title">Seguimiento en Tiempo Real.</h5>
                             </div>
                         </div>
                     </div>
-                    <!-- card 4 -->
-                    <div class="card mt-4">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-sm-12 col-md-12 col lg-12 col-xl-6" style="width: 15%;">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 32 32">
-                                        <path fill="#000000"
-                                            d="M26 30h-2v-5a5.006 5.006 0 0 0-5-5h-6a5.006 5.006 0 0 0-5 5v5H6v-5a7.01 7.01 0 0 1 7-7h6a7.01 7.01 0 0 1 7 7zM22 6v4c0 1.103-.897 2-2 2h-1a1 1 0 0 0 0 2h1c2.206 0 4-1.794 4-4V6zm-6 10c-3.86 0-7-3.14-7-7s3.14-7 7-7c1.989 0 3.89.85 5.217 2.333l-1.49 1.334A5 5 0 0 0 16 4c-2.757 0-5 2.243-5 5s2.243 5 5 5z" />
-                                    </svg>
-                                </div>
-                                <div class="col-sm-12 col-md-12 col lg-12 col-xl-6" style="width: 80%;">
-                                    <h5 class="card-title">Atención Personalizada.</h5>
-                                    <p class="card-text">Nuestro equipo de expertos está disponible para asistirte en
-                                        cada paso del proceso de envío, desde la recolección hasta la entrega.</p>
-                                </div>
+                    <div class="col-sm-2">
+                        <div class="card align-items-center justify-content-center text-center"
+                            style="width: 100%; border: 0;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24">
+                                <path fill="#000000"
+                                    d="M21 8a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-1.062A8 8 0 0 1 12 23v-2a6 6 0 0 0 6-6V9A6 6 0 0 0 6 9v7H3a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2h1.062a8.001 8.001 0 0 1 15.876 0zM7.76 15.785l1.06-1.696A5.97 5.97 0 0 0 12 15a5.97 5.97 0 0 0 3.18-.911l1.06 1.696A7.96 7.96 0 0 1 12 17a7.96 7.96 0 0 1-4.24-1.215" />
+                            </svg>
+                            <div class="card-body">
+                                <h5 class="card-title">Atención Personalizada.</h5>
                             </div>
                         </div>
                     </div>
-                    <!-- card 5 -->
-                    <div class="card mt-4">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-sm-12 col-md-12 col lg-12 col-xl-6" style="width: 15%;">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24">
-                                        <g fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"
-                                            stroke-width="2">
-                                            <path
-                                                d="M12 22v-9m3.17-10.79a1.67 1.67 0 0 1 1.63 0L21 4.57a1.93 1.93 0 0 1 0 3.36L8.82 14.79a1.66 1.66 0 0 1-1.64 0L3 12.43a1.93 1.93 0 0 1 0-3.36z" />
-                                            <path
-                                                d="M20 13v3.87a2.06 2.06 0 0 1-1.11 1.83l-6 3.08a1.93 1.93 0 0 1-1.78 0l-6-3.08A2.06 2.06 0 0 1 4 16.87V13" />
-                                            <path
-                                                d="M21 12.43a1.93 1.93 0 0 0 0-3.36L8.83 2.2a1.64 1.64 0 0 0-1.63 0L3 4.57a1.93 1.93 0 0 0 0 3.36l12.18 6.86a1.64 1.64 0 0 0 1.63 0z" />
-                                        </g>
-                                    </svg>
-                                </div>
-                                <div class="col-sm-12 col-md-12 col lg-12 col-xl-6" style="width: 80%;">
-                                    <h5 class="card-title">Aseguramiento de Paquetes.</h5>
-                                    <p class="card-text">Ofrecemos opciones de seguro para tus envíos, brindando una
-                                        capa adicional de protección para tus productos.</p>
-                                </div>
+                    <div class="col-sm-2">
+                        <div class="card align-items-center justify-content-center text-center"
+                            style="width: 100%; border: 0;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24">
+                                <g fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2">
+                                    <path
+                                        d="M12 22v-9m3.17-10.79a1.67 1.67 0 0 1 1.63 0L21 4.57a1.93 1.93 0 0 1 0 3.36L8.82 14.79a1.66 1.66 0 0 1-1.64 0L3 12.43a1.93 1.93 0 0 1 0-3.36z" />
+                                    <path
+                                        d="M20 13v3.87a2.06 2.06 0 0 1-1.11 1.83l-6 3.08a1.93 1.93 0 0 1-1.78 0l-6-3.08A2.06 2.06 0 0 1 4 16.87V13" />
+                                    <path
+                                        d="M21 12.43a1.93 1.93 0 0 0 0-3.36L8.83 2.2a1.64 1.64 0 0 0-1.63 0L3 4.57a1.93 1.93 0 0 0 0 3.36l12.18 6.86a1.64 1.64 0 0 0 1.63 0z" />
+                                </g>
+                            </svg>
+                            <div class="card-body">
+                                <h5 class="card-title">Aseguramiento de Paquetes.</h5>
                             </div>
                         </div>
                     </div>
-                    <!-- card 6 -->
-                    <div class="card mt-4">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-sm-12 col-md-12 col lg-12 col-xl-6" style="width: 15%;">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 32 32">
-                                        <path fill="#000000"
-                                            d="M2 4v6H0v3h1v6H0v3h2v6h4.563a9.29 9.29 0 0 0 6.562-2.719l4.344-4.312l8.031-.688a8.45 8.45 0 0 0 6.344-3.718l.343-.563l-.343-.563A8.45 8.45 0 0 0 25.5 11.72l-8.031-.688l-4.188-4.187l-.156-.125A9.294 9.294 0 0 0 6.562 4zm2 2h2.563a7.3 7.3 0 0 1 5.156 2.125L14.563 11H10v2h7l8.313.688c1.687.14 3.152 1.05 4.25 2.312c-1.098 1.262-2.563 2.172-4.25 2.313L16.905 19H10v2h4.563l-2.844 2.875A7.3 7.3 0 0 1 6.563 26H4v-7H3v-6h1zm20 9v2h2v-2zM6 21v3h2v-3z" />
-                                    </svg>
-                                </div>
-                                <div class="col-sm-12 col-md-12 col lg-12 col-xl-6" style="width: 80%;">
-                                    <h5 class="card-title">Sostenibilidad Espacial.</h5>
-                                    <p class="card-text">Nos comprometemos a prácticas de envío responsables y
-                                        respetuosas con el medio ambiente espacial.</p>
-                                </div>
+                    <div class="col-sm-2">
+                        <div class="card align-items-center justify-content-center text-center"
+                            style="width: 100%; border: 0;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="32.35294117647059"
+                                viewBox="0 0 2176 1408">
+                                <path fill="#000000"
+                                    d="M620 864q-110 64-268 64H224v-64h-64q-13 0-22.5-23.5T128 784q0-24 7-49q-58-2-96.5-10.5T0 704t38.5-20.5T135 673q-7-25-7-49q0-33 9.5-56.5T160 544h64v-64h128q158 0 268 64h1113q42 7 106.5 18t80.5 14q89 15 150 40.5t83.5 47.5t22.5 40t-22.5 40t-83.5 47.5t-150 40.5q-16 3-80.5 14T1733 864zm1119-252q53 36 53 92t-53 92l81 30q68-48 68-122t-68-122zM625 880h1015q-217 38-456 80q-57 0-113 24t-83 48l-28 24l-288 288q-26 26-70.5 45t-89.5 19h-96l-93-464h29q157 0 273-64M352 464h-29L416 0h96q46 0 90 19t70 45l288 288q4 4 11 10.5t30.5 23t48.5 29t61.5 23T1184 448l456 80H625q-116-64-273-64" />
+                            </svg>
+                            <div class="card-body">
+                                <h5 class="card-title">Sostenibilidad Espacial.</h5>
                             </div>
                         </div>
                     </div>
-                    <!-- card 7 -->
-                    <div class="card mt-4">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-sm-12 col-md-12 col lg-12 col-xl-6" style="width: 15%;">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
-                                        viewBox="0 0 512 512">
-                                        <path fill="#000000"
-                                            d="M256 46c-45.074 0-82 36.926-82 82c0 25.812 12.123 48.936 30.938 64H128L32 480h448l-96-288h-76.938C325.877 176.936 338 153.812 338 128c0-45.074-36.926-82-82-82m0 36c25.618 0 46 20.382 46 46s-20.382 46-46 46s-46-20.382-46-46s20.382-46 46-46m-82.215 202.95h23.5v33.263l33.873-33.264h27.283l-43.883 43.15l48.4 47.974H233.54l-36.255-35.888v35.888h-23.5zm119.934 21.24q7.14-.001 12.573 2.806q5.431 2.807 9.95 8.85v-10.13h21.972v61.462q0 16.479-10.438 25.146q-10.376 8.728-30.152 8.727q-6.406 0-12.39-.976a77.4 77.4 0 0 1-12.024-2.99v-17.03q5.74 3.297 11.23 4.884q5.496 1.648 11.05 1.648q10.742 0 15.746-4.7q5.006-4.698 5.006-14.708v-4.7q-4.516 5.98-9.95 8.788q-5.432 2.806-12.573 2.808q-12.513 0-20.69-9.826q-8.18-9.888-8.18-25.146q0-15.321 8.18-25.086q8.177-9.826 20.69-9.827m8.118 15.746q-6.776.001-10.56 5.005q-3.784 5.007-3.784 14.162q0 9.399 3.662 14.28q3.663 4.823 10.682 4.823q6.835-.001 10.62-5.006t3.784-14.098q0-9.156-3.785-14.16q-3.784-5.006-10.62-5.006z" />
-                                    </svg>
-                                </div>
-                                <div class="col-sm-12 col-md-12 col lg-12 col-xl-6" style="width: 80%;">
-                                    <h5 class="card-title">Flexibilidad en Tamaños y Pesos.</h5>
-                                    <p class="card-text">Capacidad para transportar una amplia variedad de productos,
-                                        sin importar su tamaño o peso.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                    <p>Envía tus productos a través de nuestra paquetería espacial, que ofrece servicios de envío por
+                        todo el sistema solar. Nos encargamos de transportar tus paquetes a cualquier planeta, luna o
+                        estación espacial, asegurando la entrega rápida y segura de tus productos. Confía en nosotros
+                        para llegar a los destinos más lejanos y remotos del espacio, con la garantía de un servicio
+                        eficiente y profesional.</p>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 mt-5">
+                    <img src="file/imagenes/fondo.jpg" width="400px" height="200px"
+                        alt="imagen de cobertura total del sistema solar">
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 mt-5">
+                    <h3 class="text-center">Cobertura Total del Sistema Solar.</h3>
+                    <p>Nuestro servicio de paquetería espacial ofrece una cobertura integral a lo largo de todo el
+                        sistema solar. Esto significa que puedes enviar tus productos a cualquier destino, ya sea a
+                        planetas, lunas, estaciones espaciales o cualquier otra ubicación en nuestro vasto sistema
+                        solar. No importa cuán remoto o distante sea el destino, nuestro servicio garantiza que tus
+                        envíos lleguen a donde necesitan estar.</p>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 mt-5">
+                    <h3 class="text-center">Entrega Rápida y Segura.</h3>
+                    <p>Nos comprometemos a ofrecer una entrega rápida y segura de tus paquetes. Gracias a nuestra
+                        tecnología avanzada y procesos optimizados, podemos garantizar que tus productos lleguen a
+                        tiempo y en perfectas condiciones. La seguridad de tus envíos es nuestra prioridad, y trabajamos
+                        diligentemente para evitar cualquier retraso o daño durante el transporte.</p>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 mt-5">
+                    <img src="file/imagenes/fondo.jpg" width="400px" height="200px"
+                        alt="imagen de entrega rápida y segura">
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 mt-5">
+                    <img src="file/imagenes/fondo.jpg" width="400px" height="200px"
+                        alt="imagen de tecnologia de última generación">
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 mt-5">
+                    <h3 class="text-center">Tecnología de Última Generación.</h3>
+                    <p>Utilizamos naves espaciales de última generación para asegurar un transporte eficiente y
+                        confiable. Nuestras naves están equipadas con la tecnología más avanzada para manejar y
+                        transportar tus productos de manera segura y efectiva. Esto nos permite ofrecer un servicio de
+                        alta calidad y mantener nuestros estándares de excelencia en cada envío.</p>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 mt-5">
+                    <h3 class="text-center">Seguimiento en Tiempo Real.</h3>
+                    <p>Con nuestro sistema de seguimiento en tiempo real, podrás monitorear el progreso de tu envío
+                        desde el momento en que sale de la Tierra hasta que llega a su destino final en cualquier punto
+                        del sistema solar. Esta transparencia te proporciona tranquilidad, permitiéndote saber
+                        exactamente dónde se encuentra tu paquete en cada etapa del viaje.</p>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 mt-5">
+                    <img src="file/imagenes/fondo.jpg" width="400px" height="200px"
+                        alt="imagen de seguimiento en tiempo real">
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 mt-5">
+                    <img src="file/imagenes/fondo.jpg" width="400px" height="200px" alt="">
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 mt-5">
+                    <h3 class="text-center">Atención Personalizada.</h3>
+                    <p>Nuestro equipo de expertos está a tu disposición para ofrecerte atención personalizada en cada
+                        paso del proceso de envío. Desde la recolección inicial hasta la entrega final, estamos aquí
+                        para asistirte con cualquier pregunta o preocupación que puedas tener. Nos enorgullecemos de
+                        brindar un servicio al cliente excepcional que se adapta a tus necesidades específicas.</p>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 mt-5">
+                    <h3 class="text-center">Aseguramiento de Paquetes</h3>
+                    <p>Ofrecemos opciones de seguro para tus envíos, proporcionándote una capa adicional de protección
+                        para tus productos. Puedes elegir el nivel de cobertura que mejor se adapte a tus necesidades,
+                        asegurando que tus paquetes estén protegidos contra cualquier eventualidad durante el
+                        transporte.</p>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 mt-5">
+                    <img src="file/imagenes/fondo.jpg" width="400px" height="200px"
+                        alt="imagen de aseguramiento de paquetes">
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 mt-5">
+                    <img src="file/imagenes/fondo.jpg" width="400px" height="200px" alt="">
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 mt-5">
+                    <h3 class="text-center">Sostenibilidad Espacial</h3>
+                    <p>Estamos comprometidos con prácticas de envío responsables y respetuosas con el medio ambiente
+                        espacial. Adoptamos medidas para minimizar nuestro impacto ambiental y promover la
+                        sostenibilidad en todas nuestras operaciones. Tu confianza en nuestro servicio también respalda
+                        nuestra misión de cuidar el entorno espacial.</p>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 mt-5">
+                    <h3 class="text-center">Flexibilidad en Tamaños y Pesos</h3>
+                    <p>Nuestra capacidad para transportar una amplia variedad de productos, sin importar su tamaño o
+                        peso, es una de nuestras principales ventajas. Ya sea que necesites enviar artículos grandes y
+                        pesados o productos pequeños y delicados, nuestro servicio está diseñado para adaptarse a tus
+                        necesidades y asegurar un transporte eficiente.</p>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 mt-5">
+                    <img src="file/imagenes/fondo.jpg" width="400px" height="200px"
+                        alt="imagen de Flexibilidad en tamaños y pesos">
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 mt-5">
+                    <img src="file/imagenes/fondo.jpg" width="400px" height="200px" alt="">
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 mt-5">
+                    <h3 class="text-center">Servicio a Empresas y Particulares</h3>
+                    <p>Ofrecemos soluciones de paquetería tanto para empresas como para particulares, adaptándonos a las
+                        necesidades específicas de cada cliente. Ya sea que necesites realizar envíos comerciales o
+                        personales, nuestro servicio está diseñado para satisfacer una amplia gama de requerimientos,
+                        proporcionando soluciones flexibles y efectivas.</p>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 mt-5">
+                    <h3 class="text-center">Experiencia y Confiabilidad</h3>
+                    <p>Contamos con años de experiencia en el sector de la paquetería espacial, lo que nos respalda como
+                        la
+                        opción más confiable para tus envíos interplanetarios. Nuestra trayectoria y expertise en el
+                        campo
+                        nos permiten ofrecer un servicio de alta calidad, garantizando que tus productos sean
+                        transportados
+                        con la mayor precisión y fiabilidad.</p>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 mt-5">
+                    <img src="file/imagenes/fondo.jpg" width="400px" height="200px"
+                        alt="imagenes de experiencia y confiabilidad">
                 </div>
             </div>
         </div>
@@ -350,6 +422,10 @@
                                         habilitado para acceder a todos los beneficios y recursos exclusivos que nuestra
                                         comunidad tiene para ofrecer. ¡Únete hoy y comienza tu aventura interplanetaria
                                         con nosotros!</p>
+                                    <p>Para registrar solo da clic en el menu en la parte de registro y se abrira una
+                                        mini
+                                        pantalla y solo llena los datos.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -363,7 +439,26 @@
                             <div id="collapseTwo" class="accordion-collapse collapse"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <p></p>
+                                    <p>Para comenzar un envío, solo necesitas completar la información en los siguientes
+                                        campos:</p>
+                                    <ul>
+                                        <li><strong>Tu nombre:</strong> Proporciona tu nombre completo para que podamos
+                                            identificarte y procesar tu solicitud correctamente.</li>
+                                        <li><strong>Planeta de envío:</strong> Indica el planeta desde el cual se
+                                            enviará tu paquete para que podamos organizar el transporte inicial.</li>
+                                        <li><strong>Planeta de destino:</strong> Especifica el planeta al que debe
+                                            llegar tu paquete, asegurando que se dirija al lugar correcto.</li>
+                                        <li><strong>Peso del paquete:</strong> Detalla el peso del paquete para calcular
+                                            los requisitos de transporte y asegurar una entrega eficiente.</li>
+                                        <li><strong>Fecha y hora de envío:</strong> Selecciona la fecha y hora en la que
+                                            deseas que se realice el envío para coordinar el proceso adecuadamente.</li>
+                                    </ul>
+                                    <p>Para iniciar el proceso, dirígete al menú y selecciona la sección de envío. Al
+                                        hacerlo, se abrirá una ventana emergente donde podrás ingresar toda la
+                                        información requerida. Completa el formulario con los datos solicitados y sigue
+                                        las instrucciones para finalizar el envío. Este proceso es rápido y sencillo,
+                                        diseñado para facilitarte la gestión de tus envíos espaciales de manera
+                                        eficiente.</p>
                                 </div>
                             </div>
                         </div>
@@ -371,31 +466,86 @@
                             <h2 class="accordion-header">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    Accordion Item #3
+                                    ¿Como rastrear tu paquete?
                                 </button>
                             </h2>
                             <div id="collapseThree" class="accordion-collapse collapse"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <strong>This is the third item's accordion body.</strong> It is hidden by default,
-                                    until the
-                                    collapse plugin adds the appropriate classes that we use to style each element.
-                                    These classes
-                                    control the overall appearance, as well as the showing and hiding via CSS
-                                    transitions. You can
-                                    modify any of this with custom CSS or overriding our default variables. It's also
-                                    worth noting
-                                    that just about any HTML can go within the <code>.accordion-body</code>, though the
-                                    transition
-                                    does limit overflow.
+                                    <p>Para localizar tu paquete, simplemente necesitas el número de envío. Puedes
+                                        hacerlo de dos maneras: En la vista actual, introduce el número de envío en el
+                                        campo designado, y serás redirigido a la pantalla de seguimiento.
+                                        Alternativamente, puedes acceder al menú y hacer clic en la opción "Rastro".
+                                        Esto te llevará a la vista de rastreo, donde deberás ingresar el número de envío
+                                        y presionar el botón correspondiente. De esta forma, podrás ver toda la
+                                        información actualizada sobre el estado y la ubicación de tu paquete.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-5">
+                    <p>Si la información de ayuda proporcionada no fue suficiente, no dudes en contactarme a:</p>
+                    <a href="https://devabraham.com" class="enlace">Ing. Abraham Vera Martinez </a>
+                </div>
             </div>
         </div>
     </section>
+
+    <!-- footer -->
+    <footer class="text-center bg-body-tertiary">
+        <!-- Grid container -->
+        <div class="container pt-4">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Linkedin -->
+                <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+                        <circle cx="4" cy="4" r="2" fill="#000000" fill-opacity="0">
+                            <animate fill="freeze" attributeName="fill-opacity" dur="0.4s" values="0;1" />
+                        </circle>
+                        <g fill="none" stroke="#000000" stroke-linecap="round" stroke-width="4">
+                            <path stroke-dasharray="12" stroke-dashoffset="12" d="M4 10V20">
+                                <animate fill="freeze" attributeName="stroke-dashoffset" begin="0.2s" dur="0.2s"
+                                    values="12;0" />
+                            </path>
+                            <path stroke-dasharray="12" stroke-dashoffset="12" d="M10 10V20">
+                                <animate fill="freeze" attributeName="stroke-dashoffset" begin="0.5s" dur="0.2s"
+                                    values="12;0" />
+                            </path>
+                            <path stroke-dasharray="24" stroke-dashoffset="24"
+                                d="M10 15C10 12.2386 12.2386 10 15 10C17.7614 10 20 12.2386 20 15V20">
+                                <animate fill="freeze" attributeName="stroke-dashoffset" begin="0.7s" dur="0.5s"
+                                    values="24;0" />
+                            </path>
+                        </g>
+                    </svg>
+                </a>
+                <!-- Github -->
+                <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+                        <g fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                            <path stroke-dasharray="30" stroke-dashoffset="30"
+                                d="M12 4C13.6683 4 14.6122 4.39991 15 4.5C15.5255 4.07463 16.9375 3 18.5 3C18.8438 4 18.7863 5.21921 18.5 6C19.25 7 19.5 8 19.5 9.5C19.5 11.6875 19.017 13.0822 18 14C16.983 14.9178 15.8887 15.3749 14.5 15.5C15.1506 16.038 15 17.3743 15 18C15 18.7256 15 21 15 21M12 4C10.3317 4 9.38784 4.39991 9 4.5C8.47455 4.07463 7.0625 3 5.5 3C5.15625 4 5.21371 5.21921 5.5 6C4.75 7 4.5 8 4.5 9.5C4.5 11.6875 4.98301 13.0822 6 14C7.01699 14.9178 8.1113 15.3749 9.5 15.5C8.84944 16.038 9 17.3743 9 18C9 18.7256 9 21 9 21">
+                                <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.6s" values="30;0" />
+                            </path>
+                            <path stroke-dasharray="10" stroke-dashoffset="10"
+                                d="M9 19C7.59375 19 6.15625 18.4375 5.3125 17.8125C4.46875 17.1875 4.21875 16.1562 3 15.5">
+                                <animate fill="freeze" attributeName="stroke-dashoffset" begin="0.7s" dur="0.2s"
+                                    values="10;0" />
+                            </path>
+                        </g>
+                    </svg>
+                </a>
+            </section>
+        </div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+            © <span id="fecha"></span> Copyright:
+            <a class="text-body" href="https://devabraham.com">Ing. Abraham Vera Martinez</a>
+        </div>
+    </footer>
 
     <!-- scripts bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -411,6 +561,12 @@
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <!-- scripts -->
     <script src="file/js/preloader.js"></script>
+    <script>
+        // Obtiene el año actual
+        const currentYear = new Date().getFullYear();
+        // Establece el contenido del elemento con id "fecha" al año actual
+        document.getElementById('fecha').textContent = currentYear;
+    </script>
 </body>
 
 </html>
