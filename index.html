@@ -4,13 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Space Logict</title>
-    <!-- favicon -->
-    <link rel="shortcut icon" href="file/imagenes/favicon.ico" type="image/x-icon">
-    <!-- bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <!-- css -->
+    <title>Space Logistic</title>
+    <!-- librerias de bootstrap -->
+    <link rel="stylesheet" href="file/dependency/bootstrap/css/bootstrap.min.css">
+    <!-- tipografia -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <!-- hoja de estilos -->
     <link rel="stylesheet" href="file/css/variables.css">
     <link rel="stylesheet" href="file/css/style.css">
 </head>
@@ -18,185 +20,107 @@
 <body>
     <!-- preloader -->
     <div id="preloader">
-        <div class="orbit">
-            <ul class="orbit-wrap">
-                <li class="orbit-center">
-                    <i class="orbit-center__icon fa fa-code"></i>
-                </li>
-                <li>
-                    <ul class="ring-0">
-                        <li><i class="orbit-icon fa fa-git"></i></li>
-                        <li><i class="orbit-icon fa fa-free-code-camp"></i></li>
-                        <li><i class="orbit-icon fa fa-meetup"></i></li>
-                        <li><i class="orbit-icon fa fa-codepen"></i></li>
-                    </ul>
-                </li>
-                <li>
-                    <ul class="ring-1">
-                        <li><i class="orbit-icon fa fa-podcast"></i></li>
-                        <li><i class="orbit-icon fa fa-css3"></i></li>
-                        <li><i class="orbit-icon fa fa-html5"></i></li>
-                    </ul>
-                </li>
-                <li>
-                    <ul class="ring-2">
-                        <li><i class="orbit-icon fa fa-windows"></i></li>
-                        <li><i class="orbit-icon fa fa-safari"></i></li>
-                        <li><i class="orbit-icon fa fa-edge"></i></li>
-                        <li><i class="orbit-icon fa fa-linux"></i></li>
-                        <li><i class="orbit-icon fa fa-apple"></i></li>
-                        <li><i class="orbit-icon fa fa-chrome"></i></li>
-                        <li><i class="orbit-icon fa fa-android"></i></li>
-                        <li><i class="orbit-icon fa fa-firefox"></i></li>
-                    </ul>
-                </li>
-                <li>
-                    <ul class="ring-3">
-                        <li><i class="orbit-icon fa fa-coffee"></i></li>
-                        <li><i class="orbit-icon fa fa-terminal"></i></li>
-                        <li><i class="orbit-icon fa fa-heart-o"></i></li>
-                    </ul>
-                </li>
-
-            </ul>
-
-        </div>
     </div>
+    <!-- menu -->
+    <nav>
+        <div class="logo">
+            <img src="file/img/logo.png" width="50px" alt="">
+        </div>
+        <div class="toggle">
+            <ul>
+                <li><a href="#">Iniciar</a></li>
+                <li><a href="rastreo.html">Rastreo</a></li>
+            </ul>
+        </div>
+        <div class="toggle-session">
+            <ul>
+                <li><a href="#" class="btn-iniciar" data-bs-toggle="modal" data-bs-target="#iniciarModal">Iniciar</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
     <!-- home -->
-    <div id="home">
-        <!-- menu -->
-        <nav>
-            <div class="wrapper">
-                <div class="logo"><a href="#"><img src="file/imagenes/logo.png" alt="logo"></a></div>
-                <input type="radio" name="slider" id="menu-btn">
-                <input type="radio" name="slider" id="close-btn">
-                <ul class="nav-links">
-                    <label for="close-btn" class="btn close-btn">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 15 15">
-                            <path fill="#ffffff" fill-rule="evenodd"
-                                d="M6.793 7.5L4.146 4.854l.708-.708L7.5 6.793l2.646-2.647l.708.708L8.207 7.5l2.647 2.646l-.708.707L7.5 8.208l-2.646 2.646l-.708-.707z"
-                                clip-rule="evenodd" />
-                        </svg>
-                    </label>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#about">Nosotros</a></li>
-                    <li><a href="#help">Ayuda</a></li>
-                    <li><a href="rastrear.html">Rastrear</a></li>
-                    <li><a href="secion.html">Iniciar sesión</a></li>
-                </ul>
-                <label for="menu-btn" class="btn menu-btn">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
-                        <path fill="#fff" d="M10 12h30v4H10zm0 10h30v4H10zm0 10h30v4H10z" />
-                    </svg>
-                </label>
-            </div>
-        </nav>
+    <section id="home" class="d-flex align-items-center justify-content-center">
         <div class="container">
-            <div class="row d-flex align-items-center" style="height: 100vh;">
-                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 text-center">
-                    <h1>Logistics Space</h1>
-                    <p>Envía tus productos a través de nuestra paquetería espacial, que ofrece servicios de envío por
-                        todo el sistema solar.</p>
-                    <form class="form-rastrear" action=";;javacript" method="post">
-                        <div class="row">
-                            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-3">
-                                <input type="number" name="numero" id="numero" class="form-control"
-                                    placeholder="Número de pedido..." required>
-                            </div>
-                            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center">
-                                <button class="btn btn-primary btn-rastrear">Rastrear pédido</button>
-                            </div>
-                        </div>
-                    </form>
+            <div class="row">
+                <div class="col-sm-12 col-md-6 text-center">
+                    <h1>Space Logistic</h1>
+                    <h2 style="font-size: 18px;">Envíos en todo el universo con un solo clic</h2>
+                    <p>Si necesitas encontrar tu paquete solo ingresa el número de envío</p>
+                    <a href="rastreo.html" class="btn btn-dark">Ratrear</a>
                 </div>
-                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 d-flex align-items-center justify-content-center">
-                    <div class="section-banner">
-                        <div id="star-1">
-                            <div class="curved-corner-star">
-                                <div id="curved-corner-bottomright"></div>
-                                <div id="curved-corner-bottomleft"></div>
-                            </div>
-                            <div class="curved-corner-star">
-                                <div id="curved-corner-topright"></div>
-                                <div id="curved-corner-topleft"></div>
-                            </div>
-                        </div>
-
-                        <div id="star-2">
-                            <div class="curved-corner-star">
-                                <div id="curved-corner-bottomright"></div>
-                                <div id="curved-corner-bottomleft"></div>
-                            </div>
-                            <div class="curved-corner-star">
-                                <div id="curved-corner-topright"></div>
-                                <div id="curved-corner-topleft"></div>
-                            </div>
-                        </div>
-
-                        <div id="star-3">
-                            <div class="curved-corner-star">
-                                <div id="curved-corner-bottomright"></div>
-                                <div id="curved-corner-bottomleft"></div>
-                            </div>
-                            <div class="curved-corner-star">
-                                <div id="curved-corner-topright"></div>
-                                <div id="curved-corner-topleft"></div>
-                            </div>
-                        </div>
-
-                        <div id="star-4">
-                            <div class="curved-corner-star">
-                                <div id="curved-corner-bottomright"></div>
-                                <div id="curved-corner-bottomleft"></div>
-                            </div>
-                            <div class="curved-corner-star">
-                                <div id="curved-corner-topright"></div>
-                                <div id="curved-corner-topleft"></div>
-                            </div>
-                        </div>
-
-                        <div id="star-5">
-                            <div class="curved-corner-star">
-                                <div id="curved-corner-bottomright"></div>
-                                <div id="curved-corner-bottomleft"></div>
-                            </div>
-                            <div class="curved-corner-star">
-                                <div id="curved-corner-topright"></div>
-                                <div id="curved-corner-topleft"></div>
-                            </div>
-                        </div>
-
-                        <div id="star-6">
-                            <div class="curved-corner-star">
-                                <div id="curved-corner-bottomright"></div>
-                                <div id="curved-corner-bottomleft"></div>
-                            </div>
-                            <div class="curved-corner-star">
-                                <div id="curved-corner-topright"></div>
-                                <div id="curved-corner-topleft"></div>
-                            </div>
-                        </div>
-                        <div id="star-7">
-                            <div class="curved-corner-star">
-                                <div id="curved-corner-bottomright"></div>
-                                <div id="curved-corner-bottomleft"></div>
-                            </div>
-                            <div class="curved-corner-star">
-                                <div id="curved-corner-topright"></div>
-                                <div id="curved-corner-topleft"></div>
-                            </div>
-                        </div>
+            </div>
+        </div>
+    </section>
+    <!-- objectives -->
+    <section id="objectives" style="border-top: 2px solid var(--bg-p4); padding-top: 15px;">
+        <div class="container row">
+            <div class="col-sm-3">
+                <div class="card text-center pt-2" style="border: none;">
+                    <div class="card-title">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="39.9609756097561"
+                            viewBox="0 0 1025 1024">
+                            <path fill="#10202D"
+                                d="M512.56 1024q-104 0-199-40.5t-163.5-109t-109-163.5T.56 512q0-114 50-219q-50-39-50-101q0-53 37.5-90.5t90.5-37.5q48 0 85 33q134-97 299-97q104 0 199 40.5t163.5 109t109 163.5t40.5 199t-40.5 199t-109 163.5t-163.5 109t-199 40.5m0-960q-145 0-263 86q7 22 7 42q0 53-37.5 90.5t-90.5 37.5q-7 0-19-2q-45 93-45 194q0 91 35.5 174t95.5 143t143 95.5t174 35.5t174-35.5t143-95.5t95.5-143t35.5-174t-35.5-174t-95.5-143t-143-95.5t-174-35.5m293 575q-37 87-116.5 140t-176.5 53q-87 0-160.5-43t-116.5-116.5t-43-160.5t43-160.5T352.06 235t160.5-43q116 0 204.5 74t109.5 186q31 9 50.5 34t19.5 58q0 38-26.5 65.5t-64.5 29.5m-293-383q-106 0-181 75t-75 181t75 181t181 75q76 0 138-40.5t93-106.5q-39-29-39-77q0-29 16-53t42-35q-20-87-89.5-143.5T512.56 256m0 384q-53 0-90.5-37.5t-37.5-90.5t37.5-90.5t90.5-37.5t90.5 37.5t37.5 90.5t-37.5 90.5t-90.5 37.5" />
+                        </svg>
+                        <p>Cobertura total.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card text-center pt-2" style="border: none;">
+                    <div class="card-title">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
+                            <path fill="#10202D"
+                                d="M12 21a9 9 0 1 0 0-18a9 9 0 0 0 0 18m11-9c0 6.075-4.925 11-11 11S1 18.075 1 12S5.925 1 12 1s11 4.925 11 11m-8 4.414l-4-4V5.5h2v6.086L16.414 15z" />
+                        </svg>
+                        <p>Entrega rápida.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card text-center pt-2" style="border: none;">
+                    <div class="card-title">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
+                            <g fill="none">
+                                <g clip-path="url(#IconifyId19220dfad5e43ae8e1)">
+                                    <path stroke="#10202D" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="m14.672 19.157l-2.829-2.829m2.829 2.829l1.4 2.814c.711-.693 3.122-3.919 1.413-5.628m-2.813 2.814l2.813-2.814m-5.642-.015l2.829-2.828l.014-.015m-2.843 2.843L9 14.9c.722-.703 4.001-3.1 5.686-1.415m2.814 2.843l-.015.015m0 0l2.502-2.501a8 8 0 0 0 2.145-3.89l.318-1.402l-1.402.318a8 8 0 0 0-3.89 2.145l-2.472 2.472m-11.272-.172c-1.339 2.117-1.85 3.806-1.192 4.465c.586.586 1.987.246 3.778-.778m7.313-13.586c2.117-1.339 3.806-1.85 4.465-1.192c.886.885-.345 3.634-2.854 6.778m-10.67 5A7.002 7.002 0 0 1 14 4.254" />
+                                </g>
+                                <defs>
+                                    <clipPath id="IconifyId19220dfad5e43ae8e1">
+                                        <path fill="#fff" d="M0 0h24v24H0z" />
+                                    </clipPath>
+                                </defs>
+                            </g>
+                        </svg>
+                        <p>Tecnología de vanguardia</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card text-center pt-2" style="border: none;">
+                    <div class="card-title">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 16 16">
+                            <g fill="#10202D">
+                                <path d="M8 10a2 2 0 1 0 0-4a2 2 0 0 0 0 4" />
+                                <path
+                                    d="M0 4a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V6a2 2 0 0 1-2-2z" />
+                            </g>
+                        </svg>
+                        <p>Precios bajos</p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- about -->
-    <div id="about">
+    </section>
+    <!-- welcome -->
+    <section id="welcome" class="d-flex align-items-center justify-content-center">
         <div class="container">
-            <div class="row d-flex align-items-center text-center">
-                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-5">
-                    <h2>Bienvenida</h2>
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                    <h3 class="text-center">Bienvenido</h3>
                     <p>Envía tus productos a través de nuestra paquetería espacial, que ofrece servicios de envío por
                         todo el sistema solar. Nos encargamos de transportar tus paquetes a cualquier planeta, luna o
                         estación espacial, asegurando la entrega rápida y segura de tus productos. Confía en nosotros
@@ -204,210 +128,185 @@
                         eficiente y profesional.</p>
                 </div>
                 <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                    <div class="windows"></div>
+                    <div class="window"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- shipment -->
+    <section id="shipment">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center">
+                    <h4>Envía tu paquete.</h4>
+                </div>
+            </div>
+            <form action="" method="post">
+                <div class="row">
+                    <div class="col-sm-4 mt-2">
+                        <label for="Nombre">Ingresa tu nombre <span>*</span></label>
+                        <input type="text" class="form-control" name="name" id="name" placeholder="Juan Arturo"
+                            required>
+                        <div class="invalid-feedback">
+                            Ingresa tu nombre, por favor.
+                        </div>
+                    </div>
+                    <div class="col-sm-4 mt-2">
+                        <label for="ApellidoP">Apellido paterno <span>*</span></label>
+                        <input type="text" class="form-control" name="father_surname" id="father_surname"
+                            placeholder="Vera" required>
+                        <div class="invalid-feedback">
+                            Ingrese tu Apellido Paterno, por favor.
+                        </div>
+                    </div>
+                    <div class="col-sm-4 mt-2">
+                        <label for="ApellidoM">Apellido materno <span>*</span></label>
+                        <input type="text" class="form-control" name="mother_surname" id="mother_surname"
+                            placeholder="Martinez" required>
+                        <div class="invalid-feedback">
+                            Ingrese tu Apellido Materno, por favor.
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-6 text-center mt-2">
+                        <label for="correo">Correo <span>*</span></label>
+                        <input type="text" class="form-control" name="email" id="email"
+                            placeholder="example@spacelogistics.com" required>
+                        <div class="invalid-feedback">
+                            Ingresa tu correo electronico, por favor.
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-6 mt-2 text-center">
+                        <label for="planeta">Planeta <span>*</span></label>
+                        <select name="planet" id="planet" class="form-control"></select>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-6 text-center mt-2">
+                        <label for="name_product">Nombre del producto <span>*</span></label>
+                        <input type="text" class="form-control" name="name_product" id="name_product"
+                            placeholder="Vidrios 20 cantidad" required>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-6 mt-2 text-center">
+                        <label for="peso">Peso <span>*</span></label>
+                        <input type="number" class="form-control" name="weight" id="weight" placeholder="200" required>
+                        <div class="invalid-feedback">
+                            Ingresa el peso, por favor.
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <label for="file-input" class="drop-container">
+                            <span class="drop-title">Ingresa el paquete</span>
+                            <input type="file" accept="image/*" required="" id="file-input" name="file-input"
+                                style="color: #000;">
+                        </label>
+                        <div class="invalid-feedback">
+                            Ingrese un nombre valido, por favor.
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-2 text-center">
+                        <button class="btn btn-success btn-enviar">Envíar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="py-5 mt-5" style="background-color: #f6f6f630;">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center">
+                    <h5>Navegacion rápida</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"><img
+                                    src="file/img/logo.png" width="150px" alt="logo"></a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Inicio</a></li>
+                        <li class="nav-item mb-2"><a href="rastreo.html"
+                                class="nav-link p-0 text-body-secondary">Rastreo</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-6 border-end border-dark">
+                    <p style="font-size: 14px;">©<span class="fecha" id="fecha"></span> Reservados todos los derechos.
+                        Ing. <a href="https://devabraham.com/"
+                            style="text-decoration: none; color: #000; font-weight: 500;">Abraham Vera Martinez</a> |
+                        Sitio web de México</p>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-6 d-flex align-items-end justify-content-end">
+                    <ul class="list-unstyled d-flex">
+                        <li class="ms-3">
+                            <a href="https://www.linkedin.com/in/abraham-vera-713789181/">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+                                    <circle cx="4" cy="4" r="2" fill="#000000" fill-opacity="0">
+                                        <animate fill="freeze" attributeName="fill-opacity" dur="0.15s" values="0;1" />
+                                    </circle>
+                                    <g fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="4">
+                                        <path stroke-dasharray="12" stroke-dashoffset="12" d="M4 10v10">
+                                            <animate fill="freeze" attributeName="stroke-dashoffset" begin="0.15s"
+                                                dur="0.2s" values="12;0" />
+                                        </path>
+                                        <path stroke-dasharray="12" stroke-dashoffset="12" d="M10 10v10">
+                                            <animate fill="freeze" attributeName="stroke-dashoffset" begin="0.45s"
+                                                dur="0.2s" values="12;0" />
+                                        </path>
+                                        <path stroke-dasharray="24" stroke-dashoffset="24"
+                                            d="M10 15c0 -2.76 2.24 -5 5 -5c2.76 0 5 2.24 5 5v5">
+                                            <animate fill="freeze" attributeName="stroke-dashoffset" begin="0.65s"
+                                                dur="0.2s" values="24;0" />
+                                        </path>
+                                    </g>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="ms-3">
+                            <a href="https://github.com/AbrahamVM2001">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+                                    <g fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2">
+                                        <path stroke-dasharray="32" stroke-dashoffset="32"
+                                            d="M12 4c1.67 0 2.61 0.4 3 0.5c0.53 -0.43 1.94 -1.5 3.5 -1.5c0.34 1 0.29 2.22 0 3c0.75 1 1 2 1 3.5c0 2.19 -0.48 3.58 -1.5 4.5c-1.02 0.92 -2.11 1.37 -3.5 1.5c0.65 0.54 0.5 1.87 0.5 2.5c0 0.73 0 3 0 3M12 4c-1.67 0 -2.61 0.4 -3 0.5c-0.53 -0.43 -1.94 -1.5 -3.5 -1.5c-0.34 1 -0.29 2.22 0 3c-0.75 1 -1 2 -1 3.5c0 2.19 0.48 3.58 1.5 4.5c1.02 0.92 2.11 1.37 3.5 1.5c-0.65 0.54 -0.5 1.87 -0.5 2.5c0 0.73 0 3 0 3">
+                                            <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.7s"
+                                                values="32;0" />
+                                        </path>
+                                        <path stroke-dasharray="12" stroke-dashoffset="12"
+                                            d="M9 19c-1.41 0 -2.84 -0.56 -3.69 -1.19c-0.84 -0.63 -1.09 -1.66 -2.31 -2.31">
+                                            <animate fill="freeze" attributeName="stroke-dashoffset" begin="0.8s"
+                                                dur="0.2s" values="12;0" />
+                                        </path>
+                                    </g>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Modal iniciar sesión -->
+    <div class="modal fade" id="iniciarModal" tabindex="-1" aria-labelledby="iniciarModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="iniciarModalLabel"></h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
                 </div>
             </div>
         </div>
     </div>
-    <!-- servicios -->
-    <section id="service">
-        <div class="container">
-            <div class="row d-flex align-items-center">
-                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center mt-3">
-                    <h1>Nuestro servicio</h1>
-                </div>
-                <div
-                    class="col-sm-12 col-md-12 col-lg-12 col-xl-6 mt-3 d-flex align-items-center justify-content-center">
-                    <div class="circle">
-                        <img src="file/imagenes/cobertura total.jpg" alt="Planeta">
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 mt-3">
-                    <h2 class="text-center">Cobertura Total del Sistema Solar.</h2>
-                    <p>Nuestro servicio de paquetería espacial ofrece una cobertura integral a lo largo de todo el
-                        sistema solar. Esto significa que puedes enviar tus productos a cualquier destino, ya sea a
-                        planetas, lunas, estaciones espaciales o cualquier otra ubicación en nuestro vasto sistema
-                        solar. No
-                        importa cuán remoto o distante sea el destino, nuestro servicio garantiza que tus envíos lleguen
-                        a
-                        donde necesitan estar.</p>
-                </div>
-                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 mt-3">
-                    <h2 class="text-center">Entrega Rápida y Segura.</h2>
-                    <p>Nos comprometemos a ofrecer una entrega rápida y segura de tus paquetes. Gracias a nuestra
-                        tecnología avanzada y procesos optimizados, podemos garantizar que tus productos lleguen a
-                        tiempo y en perfectas condiciones. La seguridad de tus envíos es nuestra prioridad, y trabajamos
-                        diligentemente para evitar cualquier retraso o daño durante el transporte.</p>
-                </div>
-                <div
-                    class="col-sm-12 col-md-12 col-lg-12 col-xl-6 mt-3 d-flex align-items-center justify-content-center">
-                    <div class="circle">
-                        <img src="file/imagenes/entrega rapida.jpg" alt="Planeta">
-                    </div>
-                </div>
-                <div
-                    class="col-sm-12 col-md-12 col-lg-12 col-xl-6 mt-3 d-flex align-items-center justify-content-center">
-                    <div class="circle">
-                        <img src="file/imagenes/tecnologia de ultima generacion.jpg" alt="planeta">
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 mt-3">
-                    <h2 class="text-center">Tecnología de Última Generación.</h2>
-                    <p>Utilizamos naves espaciales de última generación para asegurar un transporte eficiente y
-                        confiable. Nuestras naves están equipadas con la tecnología más avanzada para manejar y
-                        transportar tus productos de manera segura y efectiva. Esto nos permite ofrecer un servicio de
-                        alta calidad y mantener nuestros estándares de excelencia en cada envío.</p>
-                </div>
-                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 mt-3">
-                    <h2 class="text-center">Seguimiento en Tiempo Real.</h2>
-                    <p>Con nuestro sistema de seguimiento en tiempo real, podrás monitorear el progreso de tu envío
-                        desde el momento en que sale de la Tierra hasta que llega a su destino final en cualquier punto
-                        del sistema solar. Esta transparencia te proporciona tranquilidad, permitiéndote saber
-                        exactamente dónde se encuentra tu paquete en cada etapa del viaje.</p>
-                </div>
-                <div
-                    class="col-sm-12 col-md-12 col-lg-12 col-xl-6 mt-3 d-flex align-items-center justify-content-center">
-                    <div class="circle">
-                        <img src="file/imagenes/Seguimiento en tiempo real.jpg" alt="planeta">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ayuda -->
-    <section id="help" class="mt-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                    <div class="accordion accordion-flush" id="accordionFlushExample">
-                        <div class="accordion-item" style="background-color: transparent;">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
-                                    aria-controls="flush-collapseOne"
-                                    style="background-color: var(--bg-black4); border: none; color: #fff;">
-                                    ¿Como registro mi nave?
-                                </button>
-                            </h2>
-                            <div id="flush-collapseOne" class="accordion-collapse collapse"
-                                data-bs-parent="#accordionFlushExample"
-                                style="background-color: transparent; color: #fff;">
-                                <div class="accordion-body" style="background-color: transparent; color: #fff;">
-                                    <p>Para registrar tu nave, solo necesitas proporcionar los siguientes datos:</p>
-                                    <ul>
-                                        <li>Nombre completo del representante: Necesitamos el nombre completo de la
-                                            persona que representará a la nave.</li>
-                                        <li>Cantidad total de combustible de la nave: Especifica la cantidad de
-                                            combustible que tu nave puede almacenar.</li>
-                                        <li>Distancia máxima que la nave puede recorrer: Indica la distancia máxima que
-                                            tu nave puede viajar con una carga completa de combustible.</li>
-                                        <li>Tu correo electrónico: Proporciona una dirección de correo electrónico
-                                            válida para futuras comunicaciones.</li>
-                                        <li>Contraseña: Crea una contraseña segura que tenga entre 8 y 32 caracteres.
-                                            Asegúrate de que incluya una combinación de números, caracteres especiales y
-                                            letras.</li>
-                                        <li>Imagen de la nave: Sube una imagen clara de tu nave para completar el
-                                            registro.</li>
-                                    </ul>
-                                    <p>Completa estos campos y estarás listo para unirte a nuestra comunidad de
-                                        exploradores espaciales. Al registrarte, no solo estarás proporcionando la
-                                        información necesaria para el registro de tu nave, sino que también estarás
-                                        habilitado para acceder a todos los beneficios y recursos exclusivos que nuestra
-                                        comunidad tiene para ofrecer. ¡Únete hoy y comienza tu aventura interplanetaria
-                                        con nosotros!</p>
-                                    <p>Para registrar solo da clic en el menu en la parte de registro y se abrira una
-                                        mini pantalla y solo llena los datos.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item" style="background-color: transparent;">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
-                                    aria-controls="flush-collapseTwo"
-                                    style="background-color: var(--bg-black4); border: none; color: #fff;">
-                                    ¿Como inicio un envio?
-                                </button>
-                            </h2>
-                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
-                                data-bs-parent="#accordionFlushExample"
-                                style="background-color: transparent; color: #fff;">
-                                <div class="accordion-body" style="background-color: transparent; color: #fff;">
-                                    <p>Para comenzar un envío, solo necesitas completar la información en los siguientes
-                                        campos:</p>
-                                    <ul>
-                                        <li>Tu nombre: Proporciona tu nombre completo para que podamos identificarte y
-                                            procesar tu solicitud correctamente.</li>
-                                        <li>Planeta de envío: Indica el planeta desde el cual se enviará tu paquete para
-                                            que podamos organizar el transporte inicial.</li>
-                                        <li>Planeta de destino: Especifica el planeta al que debe llegar tu paquete,
-                                            asegurando que se dirija al lugar correcto.</li>
-                                        <li>Peso del paquete: Detalla el peso del paquete para calcular los requisitos
-                                            de transporte y asegurar una entrega eficiente.</li>
-                                        <li>Fecha y hora de envío: Selecciona la fecha y hora en la que deseas que se
-                                            realice el envío para coordinar el proceso adecuadamente.</li>
-                                    </ul>
-                                    <p>Para iniciar el proceso, dirígete al menú y selecciona la sección de envío. Al
-                                        hacerlo, se abrirá una ventana emergente donde podrás ingresar toda la
-                                        información requerida. Completa el formulario con los datos solicitados y sigue
-                                        las instrucciones para finalizar el envío. Este proceso es rápido y sencillo,
-                                        diseñado para facilitarte la gestión de tus envíos espaciales de manera
-                                        eficiente.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item" style="background-color: transparent;">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#flush-collapseThree" aria-expanded="false"
-                                    aria-controls="flush-collapseThree"
-                                    style="background-color: var(--bg-black4); border: none; color: #fff;">
-                                    ¿Como rastrear tu paquete?
-                                </button>
-                            </h2>
-                            <div id="flush-collapseThree" class="accordion-collapse collapse"
-                                data-bs-parent="#accordionFlushExample"
-                                style="background-color: transparent; color: #fff;">
-                                <div class="accordion-body" style="background-color: transparent; color: #fff;">
-                                    <p>Para localizar tu paquete, simplemente necesitas el número de envío. Puedes
-                                        hacerlo de dos maneras: En la vista actual, introduce el número de envío en el
-                                        campo designado, y serás redirigido a la pantalla de seguimiento.
-                                        Alternativamente, puedes acceder al menú y hacer clic en la opción "Rastro".
-                                        Esto te llevará a la vista de rastreo, donde deberás ingresar el número de envío
-                                        y presionar el botón correspondiente. De esta forma, podrás ver toda la
-                                        información actualizada sobre el estado y la ubicación de tu paquete.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- footer -->
-    <footer class="text-center text-lg-start mt-5" style="background-color: var(--bg-black7);">
-        <div class="text-center p-3">
-            © <span id="fecha"></span> Copyright:
-            <a style="color: #fff; text-decoration: none;" href="https://devabraham.com/">Ing. Abraham Vera Martinez</a>
-        </div>
-    </footer>
-    <!-- script jquery -->
-    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <!-- bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-        crossorigin="anonymous"></script>
-    <!-- script -->
+    <!-- librerias de bootstrap js -->
+    <script src="file/dependency/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="file/dependency/bootstrap/js/bootstrap.min.js"></script>
+    <script src="file/dependency/bootstrap/js/popper.min.js"></script>
+    <!-- jquery -->
+    <script src="file/dependency/jquery/jquery-3.7.1.js"></script>
+    <!-- js -->
     <script src="file/js/preloader.js"></script>
-    <script src="file/js/carrusel.js"></script>
-    <script src="file/js/login.js"></script>
+    <!-- fecha -->
+    <script src="file/js/date.js"></script>
 </body>
 
 </html>

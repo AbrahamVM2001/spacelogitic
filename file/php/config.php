@@ -1,7 +1,7 @@
 <?php
-$servername = "217.21.76.167";
+$servername = "localhost";
 $username = "u547745900_spacelogistics";
-$password = "1W>am/Ow";
+$password = "dmR0BOfjG7:";
 $dbname = "u547745900_spacelogistics";
 
 // Crear conexión

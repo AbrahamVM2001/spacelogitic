@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Logistic | Rastreo</title>
+    <!-- librerias de bootstrap -->
+    <link rel="stylesheet" href="file/dependency/bootstrap/css/bootstrap.min.css">
+    <!-- tipografia -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <!-- hoja de estilos -->
+    <link rel="stylesheet" href="file/css/variables.css">
+    <link rel="stylesheet" href="file/css/style.css">
+</head>
+
+<body>
+    <!-- preloader -->
+    <div id="preloader">
+    </div>
+    <!-- menu -->
+    <nav>
+        <div class="logo">
+            <img src="file/img/logo.png" width="50px" alt="">
+        </div>
+        <div class="toggle">
+            <ul>
+                <li><a href="index.html">Iniciar</a></li>
+                <li><a href="rastreo.html">Rastreo</a></li>
+            </ul>
+        </div>
+        <div class="toggle-session">
+            <ul>
+                <li><a href="#" class="btn-iniciar">Iniciar</a></li>
+                <li><a href="#" class="btn-registro">Registro</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- shipment -->
+    <section id="shipment" class="d-flex align-items-center justify-content-center" style="height: 100vh;">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center">
+                    <form action="" method="post">
+                        <h5>Ingresa tu número para rastrear</h5>
+                        <label for="rastrear">Rastrear <span>*</span></label>
+                        <input type="number" class="form-control" min="0" max="9999" name="number" id="number"
+                            placeholder="8888" required>
+                        <div class="invalid-feedback">
+                            Ingresa el número de rastreo, por favor.
+                        </div>
+                        <button class="btn btn-dark btn-rastrear mt-3">Rastrear</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- tracking -->
+    <section id="tracking">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12"></div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="py-5 mt-5" style="background-color: #f6f6f630;">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center">
+                    <h5>Navegacion rápida</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-body-secondary"><img
+                                    src="file/img/logo.png" width="150px" alt="logo"></a></li>
+                        <li class="nav-item mb-2"><a href="index.html"
+                                class="nav-link p-0 text-body-secondary">Inicio</a></li>
+                        <li class="nav-item mb-2"><a href="rastreo.html"
+                                class="nav-link p-0 text-body-secondary">Rastreo</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-6 border-end border-dark">
+                    <p style="font-size: 14px;">©<span class="fecha" id="fecha"></span> Reservados todos los derechos.
+                        Ing. <a href="https://devabraham.com/"
+                            style="text-decoration: none; color: #000; font-weight: 500;">Abraham Vera Martinez</a> |
+                        Sitio web de México</p>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-6 d-flex align-items-end justify-content-end">
+                    <ul class="list-unstyled d-flex">
+                        <li class="ms-3">
+                            <a href="https://www.linkedin.com/in/abraham-vera-713789181/">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+                                    <circle cx="4" cy="4" r="2" fill="#000000" fill-opacity="0">
+                                        <animate fill="freeze" attributeName="fill-opacity" dur="0.15s" values="0;1" />
+                                    </circle>
+                                    <g fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="4">
+                                        <path stroke-dasharray="12" stroke-dashoffset="12" d="M4 10v10">
+                                            <animate fill="freeze" attributeName="stroke-dashoffset" begin="0.15s"
+                                                dur="0.2s" values="12;0" />
+                                        </path>
+                                        <path stroke-dasharray="12" stroke-dashoffset="12" d="M10 10v10">
+                                            <animate fill="freeze" attributeName="stroke-dashoffset" begin="0.45s"
+                                                dur="0.2s" values="12;0" />
+                                        </path>
+                                        <path stroke-dasharray="24" stroke-dashoffset="24"
+                                            d="M10 15c0 -2.76 2.24 -5 5 -5c2.76 0 5 2.24 5 5v5">
+                                            <animate fill="freeze" attributeName="stroke-dashoffset" begin="0.65s"
+                                                dur="0.2s" values="24;0" />
+                                        </path>
+                                    </g>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="ms-3">
+                            <a href="https://github.com/AbrahamVM2001">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+                                    <g fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2">
+                                        <path stroke-dasharray="32" stroke-dashoffset="32"
+                                            d="M12 4c1.67 0 2.61 0.4 3 0.5c0.53 -0.43 1.94 -1.5 3.5 -1.5c0.34 1 0.29 2.22 0 3c0.75 1 1 2 1 3.5c0 2.19 -0.48 3.58 -1.5 4.5c-1.02 0.92 -2.11 1.37 -3.5 1.5c0.65 0.54 0.5 1.87 0.5 2.5c0 0.73 0 3 0 3M12 4c-1.67 0 -2.61 0.4 -3 0.5c-0.53 -0.43 -1.94 -1.5 -3.5 -1.5c-0.34 1 -0.29 2.22 0 3c-0.75 1 -1 2 -1 3.5c0 2.19 0.48 3.58 1.5 4.5c1.02 0.92 2.11 1.37 3.5 1.5c-0.65 0.54 -0.5 1.87 -0.5 2.5c0 0.73 0 3 0 3">
+                                            <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.7s"
+                                                values="32;0" />
+                                        </path>
+                                        <path stroke-dasharray="12" stroke-dashoffset="12"
+                                            d="M9 19c-1.41 0 -2.84 -0.56 -3.69 -1.19c-0.84 -0.63 -1.09 -1.66 -2.31 -2.31">
+                                            <animate fill="freeze" attributeName="stroke-dashoffset" begin="0.8s"
+                                                dur="0.2s" values="12;0" />
+                                        </path>
+                                    </g>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- librerias de bootstrap js -->
+    <script src="file/dependency/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="file/dependency/bootstrap/js/bootstrap.min.js"></script>
+    <script src="file/dependency/bootstrap/js/popper.min.js"></script>
+    <!-- jquery -->
+    <script src="file/dependency/jquery/jquery-3.7.1.js"></script>
+    <!-- js -->
+    <script src="file/js/preloader.js"></script>
+    <!-- fecha -->
+    <script src="file/js/date.js"></script>
+</body>
+
+</html>
